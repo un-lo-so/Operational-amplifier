@@ -1,0 +1,120 @@
+>>> ui().verifyDRCRun()
+>>> # INFO: Connectivity analysis will use 2 threads
+# INFO: Build connectivity graph, 8 tasks
+# INFO: Extract connectivity graph...
+Check n_well
+Check active
+Check poly
+Check p_plus
+Check n_plus
+Check contact
+Check metal1
+Check via
+Check metal2
+No Errors Detected
+ui().winFit()
+>>> >>> # INFO: DRC run completed
+
+
+
+
+
+
+
+
+
+>>> ui().verifyLPERun()
+>>> # WARNING: Deleting existing extracted view for cell layout
+>>> 
+# Loading pcells
+ui().loadPCell("layout", "N_PSM025")
+>>> # WARNING: PCell N_PSM025 already loaded! Ignore reload.
+>>> ui().loadPCell("layout", "P_PSM025")
+>>> # WARNING: PCell P_PSM025 already loaded! Ignore reload.
+>>> # Get raw layers
+# Form derived layers
+# Label nactivees
+# WARNING: No text labels on layer potxt purpose drawing
+# WARNING: No text labels on layer m1txt purpose drawing
+# Form connectivity
+# INFO: Connectivity analysis will use 2 threads
+# INFO: Build connectivity graph, 10 tasks
+# INFO: Extract connectivity graph...
+# Save interconnect
+# Extract MOS devices
+# Extraction completed.
+ui().openCellView("layout", "layout", "extracted")
+>>> # INFO: Reading preferences file ./.gladerc
+>>> # INFO: Opened cell layout view extracted
+>>> # INFO: LPE run completed.
+>>> 
+
+
+
+
+
+
+
+>>> ui().verifyLVSRun()
+>>> ui().exportCDL("layout", "layout", "extracted", "./layout/layout_extracted.cdl", "VDD", "(null)", "1", "0", "0", "r", "0", "c" , "-1", "0", "0")
+>>> # INFO: Writing CDL file ./layout/layout_extracted.cdl
+# INFO: Finished writing CDL file ./layout/layout_extracted.cdl
+# INFO: Elapsed time = 0.006107s
+# INFO: Starting LVS with args 'gemini.exe -F -c -v -w 0.000000 -g .\layout_\layout.err -S .\layout\layout_extracted.cdl .\layout\Draft1.cir'
+>>> Gemini 2.7.4  Compiled on Feb 12 2016 at 10:38:27
+
+
+Graph ".\layout\layout_extracted.cdl": 	Number of devices: 24
+	Number of nets: 9
+
+Graph ".\layout\Draft1.cir": 	Number of devices: 24
+	Number of nets: 9
+
+These circuits contain some symmetry (72% nodes not yet matched).
+Gemini will attempt to find a valid match for symmetrical nodes.
+########################0 size warnings.
+0 (0%) matches were found by local matching
+All nodes were matched in 9 passes
+
+0 devices and 0 nets written to .\layout\layout.err
+
+# INFO: LVS finished with exit code 0
+# INFO: LVS completed.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,29 @@
+* D:\Users\Enrico\Documents\Dropbox\progetto Bruschi\opamp_Project\schematico.asc
+
+.subckt schematico Bias VDD V- V+ Vout
+M8A Bias Bias VDD VDD P_PSM025 l=1u w=8.5u
+M1B N003 V+ N001 VDD P_PSM025 l=1u w=8.5u
+M2A N002 V- N001 VDD P_PSM025 l=1u w=8.5u
+M3A N002 N002 0 0 N_PSM025 l=1u w=2.6u
+M4A N003 N002 0 0 N_PSM025 l=1u w=2.6u
+M7A N001 Bias VDD VDD P_PSM025 l=1u w=8.5u
+M7B N001 Bias VDD VDD P_PSM025 l=1u w=8.5u
+M8B Bias Bias VDD VDD P_PSM025 l=1u w=8.5u
+M7C N001 Bias VDD VDD P_PSM025 l=1u w=8.5u
+M7D N001 Bias VDD VDD P_PSM025 l=1u w=8.5u
+M6A Vout Bias VDD VDD P_PSM025 l=1u w=8.5u
+M6B Vout Bias VDD VDD P_PSM025 l=1u w=8.5u
+M6D Vout Bias VDD VDD P_PSM025 l=1u w=8.5u
+M6E Vout Bias VDD VDD P_PSM025 l=1u w=8.5u
+M6C Vout Bias VDD VDD P_PSM025 l=1u w=8.5u
+M5E Vout N003 0 0 N_PSM025 l=1u w=2.6u
+M5D Vout N003 0 0 N_PSM025 l=1u w=2.6u
+M5C Vout N003 0 0 N_PSM025 l=1u w=2.6u
+M5B Vout N003 0 0 N_PSM025 l=1u w=2.6u
+M5A Vout N003 0 0 N_PSM025 l=1u w=2.6u
+M3B N002 N002 0 0 N_PSM025 l=1u w=2.6u
+M4B N003 N002 0 0 N_PSM025 l=1u w=2.6u
+M2B N002 V- N001 VDD P_PSM025 l=1u w=8.5u
+M1A N003 V+ N001 VDD P_PSM025 l=1u w=8.5u
+.lib PSM025.mos
+.ends schematico

@@ -1,0 +1,46 @@
+*******************************************************************************
+* CDL netlist
+*
+* Library : layout
+* Top Cell Name: layout
+* View Name: extracted
+* Netlist created: 9.dic.2025
+*******************************************************************************
+
+*.SCALE METER
+*.GLOBAL VDD
+
+*******************************************************************************
+* Library Name: layout
+* Cell Name:    layout
+* View Name:    extracted
+*******************************************************************************
+
+.SUBCKT layout
+*.PININFO Bias:B 0:B Vout:B Vi1:B Vi2:B
+
+MM28 n6 n9 0 0 N_PSM025 w=2.6e-06 l=1e-06 as=3.26e-12 ps=5.4e-06 ad=3.26e-12 pd=5.4e-06 $X=0.00020325 $Y=2.88e-05
+MM39 n5 Bias VDD VDD P_PSM025 w=8.5e-06 l=1e-06 as=1.062e-11 ps=1.21e-05 ad=1.062e-11 pd=1.21e-05 $X=0.00015185 $Y=5.635e-05
+MM38 n5 Bias VDD VDD P_PSM025 w=8.5e-06 l=1e-06 as=1.062e-11 ps=1.21e-05 ad=1.062e-11 pd=1.21e-05 $X=0.00013525 $Y=5.635e-05
+MM30 n6 n9 0 0 N_PSM025 w=2.6e-06 l=1e-06 as=3.26e-12 ps=5.4e-06 ad=3.26e-12 pd=5.4e-06 $X=0.00022565 $Y=2.88e-05
+MM43 n6 Bias VDD VDD P_PSM025 w=8.5e-06 l=1e-06 as=1.062e-11 ps=1.21e-05 ad=1.062e-11 pd=1.21e-05 $X=0.0001899 $Y=5.635e-05
+MM24 n7 n7 0 0 N_PSM025 w=2.6e-06 l=1e-06 as=3.26e-12 ps=5.4e-06 ad=3.26e-12 pd=5.4e-06 $X=0.00012285 $Y=2.88e-05
+MM36 n5 Bias VDD VDD P_PSM025 w=8.5e-06 l=1e-06 as=1.062e-11 ps=1.21e-05 ad=1.062e-11 pd=1.21e-05 $X=0.00011865 $Y=5.635e-05
+MM41 n5 Bias VDD VDD P_PSM025 w=8.5e-06 l=1e-06 as=1.062e-11 ps=1.21e-05 ad=1.062e-11 pd=1.21e-05 $X=0.00016845 $Y=5.635e-05
+MM37 n7 Vi1 n5 VDD P_PSM025 w=8.5e-06 l=1e-06 as=1.062e-11 ps=1.21e-05 ad=1.062e-11 pd=1.21e-05 $X=0.00013295 $Y=4.26e-05
+MM47 n6 Bias VDD VDD P_PSM025 w=8.5e-06 l=1e-06 as=1.062e-11 ps=1.21e-05 ad=1.062e-11 pd=1.21e-05 $X=0.0002565 $Y=5.635e-05
+MM25 n7 n7 0 0 N_PSM025 w=2.6e-06 l=1e-06 as=3.26e-12 ps=5.4e-06 ad=3.26e-12 pd=5.4e-06 $X=0.00013405 $Y=2.88e-05
+MM34 Bias Bias VDD VDD P_PSM025 w=8.5e-06 l=1e-06 as=1.062e-11 ps=1.21e-05 ad=1.062e-11 pd=1.21e-05 $X=0.00010205 $Y=5.635e-05
+MM31 n6 n9 0 0 N_PSM025 w=2.6e-06 l=1e-06 as=3.26e-12 ps=5.4e-06 ad=3.26e-12 pd=5.4e-06 $X=0.00023685 $Y=2.88e-05
+MM42 n9 Vi2 n5 VDD P_PSM025 w=8.5e-06 l=1e-06 as=1.062e-11 ps=1.21e-05 ad=1.062e-11 pd=1.21e-05 $X=0.0001711 $Y=4.26e-05
+MM33 Bias Bias VDD VDD P_PSM025 w=8.5e-06 l=1e-06 as=1.062e-11 ps=1.21e-05 ad=1.062e-11 pd=1.21e-05 $X=8.54e-05 $Y=5.635e-05
+MM45 n6 Bias VDD VDD P_PSM025 w=8.5e-06 l=1e-06 as=1.062e-11 ps=1.21e-05 ad=1.062e-11 pd=1.21e-05 $X=0.0002231 $Y=5.635e-05
+MM44 n6 Bias VDD VDD P_PSM025 w=8.5e-06 l=1e-06 as=1.062e-11 ps=1.21e-05 ad=1.062e-11 pd=1.21e-05 $X=0.0002065 $Y=5.635e-05
+MM29 n6 n9 0 0 N_PSM025 w=2.6e-06 l=1e-06 as=3.26e-12 ps=5.4e-06 ad=3.26e-12 pd=5.4e-06 $X=0.00021445 $Y=2.88e-05
+MM32 n6 n9 0 0 N_PSM025 w=2.6e-06 l=1e-06 as=3.26e-12 ps=5.4e-06 ad=3.26e-12 pd=5.4e-06 $X=0.00024805 $Y=2.88e-05
+MM40 n9 Vi2 n5 VDD P_PSM025 w=8.5e-06 l=1e-06 as=1.0195e-11 ps=1.2e-05 ad=1.062e-11 pd=1.21e-05 $X=0.0001543 $Y=4.26e-05
+MM27 n9 n7 0 0 N_PSM025 w=2.6e-06 l=1e-06 as=3.26e-12 ps=5.4e-06 ad=3.26e-12 pd=5.4e-06 $X=0.0001704 $Y=2.88e-05
+MM26 n9 n7 0 0 N_PSM025 w=2.6e-06 l=1e-06 as=3.26e-12 ps=5.4e-06 ad=3.26e-12 pd=5.4e-06 $X=0.0001592 $Y=2.88e-05
+MM35 n7 Vi1 n5 VDD P_PSM025 w=8.5e-06 l=1e-06 as=1.062e-11 ps=1.21e-05 ad=1.062e-11 pd=1.21e-05 $X=0.00011615 $Y=4.26e-05
+MM46 n6 Bias VDD VDD P_PSM025 w=8.5e-06 l=1e-06 as=1.062e-11 ps=1.21e-05 ad=1.062e-11 pd=1.21e-05 $X=0.0002397 $Y=5.635e-05
+.ENDS
