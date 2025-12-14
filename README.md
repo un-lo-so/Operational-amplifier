@@ -8,3 +8,5 @@ All filese (models, symbols and layout library are provided)
 
 - Simulations were performed with LTSpice
 - Layout was performed with Glade (https://peardrop.co.uk/)
+
+![layout of operational amplifier](./img/layout.png)
